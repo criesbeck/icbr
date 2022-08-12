@@ -1,0 +1,8 @@
+(flet ((ld (x) (load (merge-pathnames x *load-truename*))))
+  (ld "mcmops.lsp")
+  (ld "mcchef.lsp")
+  (clear-memory)
+  (ld "mcmops.mops")
+  (ld "mcchef.mops")
+  (chef-demo)
+  )
